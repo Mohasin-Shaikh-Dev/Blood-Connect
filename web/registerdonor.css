@@ -1,0 +1,49 @@
+body {
+  background: linear-gradient(to bottom right, #ff4d4d, #1a75ff);
+  background-position: center;
+
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  color: black;
+  font-weight: bolder;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: red;
+}
+
+.form-control {
+  border-radius: 5px;
+  background-color: #fff; /* Set background color for form controls */
+  color: #000; /* Set text color for form controls */
+}
+
+.btn-primary {
+  background-color: #1a75ff;
+  border-color: #1a75ff;
+}
+
+.btn-primary:hover {
+  background-color: #0055ff;
+  border-color: #0055ff;
+}
+
+.custom-file-label::after {
+  content: "Browse";
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+  content: "Browse";
+}
+
+.custom-file-input:focus~.custom-file-label {
+  border-color: #1a75ff;
+  box-shadow: 0 0 0 0.2rem rgba(26, 117, 255, 0.25);
+}

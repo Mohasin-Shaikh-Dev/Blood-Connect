@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Oswald:wght@200&family=Pacifico&display=swap" rel="stylesheet">
+<style>
+		/*contact us*/
+/* Custom CSS for Contact Form */
+body{
+	background-color: azure;
+}
+.contactus{
+    margin-top: 50px;
+    
+}
+.contactus .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contactus .form-label {
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+
+.contactus .btn-primary {
+    margin-top: 10px;
+}
+
+.contactus span {
+    font-family: 'Pacifico', cursive;
+    color: red;
+}
+
+</style>
+</head>
+<body>
+		<div  id="contactus" class="contactus">
+        <div class="container">
+          <h2 class="text-center mb-4" style="color:green;font-family: 'Pacifico', cursive;
+          ">CONTACT US</h2>
+          <form action="homepage.jsp" onsubmit="return contactusvalid()">
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" name="name" autocomplete="off" required>
+                  <span id="namevalid"></span>
+              </div>
+              <div class="mb-3">
+                  <label for="mobileNumber" class="form-label">Mobile Number</label>
+                  <input type="tel" class="form-control" id="mobileNumber" name="mobileNumber" autocomplete="off"  required>
+                  <span id="mobvalid"></span>
+              </div>
+              <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" name="message" rows="4"  required autocomplete="off" style="resize: none; "></textarea>
+                  <span id="msgvalid"></span>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+      </div>
+    </div>
+    
+    <!--validatiom -->
+    <script>
+            function contactusvalid()
+            {
+              var name=document.getElementById("name").value;
+              var mobile=document.getElementById("mobileNumber").value;
+              var message=document.getElementById("message").value;
+              var result=true;
+              var namerex=/^[a-zA-Z\s]{3,20}$/;
+              var msgrx=/^[a-zA-Z\s]{3,}$/;
+              var mobrx=/^[7-9][0-9]{9}$/;
+              if(!(namerex.test(name)))
+              {
+                document.getElementById("namevalid").innerHTML="invalid name";
+                result=false;
+              }
+
+              if(!(mobrx.test(mobile)))
+              {
+                document.getElementById("mobvalid").innerHTML="invalid MobileNumber";
+                result=false;
+              }
+
+              if(!(msgrx.test(message)))
+              {
+                document.getElementById("msgvalid").innerHTML="Enter full message";
+                result=false;
+              }
+              if(result==true)
+              {
+                alertbox();
+               
+               return result;
+              }
+              else
+              {
+                return result;
+              }
+              
+            }
+            function alertbox()
+            {
+              alert("Successfully send click Ok to Confirm");
+            }
+      </script>
+</body>
+</html>

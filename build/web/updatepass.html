@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Update Password</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="card">
+        <h2 class="text-center">Update Password</h2>
+        <form action="updatepasscheck.jsp" onsubmit="return validatepass()">
+            <div class="form-group">
+                <label for="newPassword">New Password</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <input type="password" class="form-control" id="newPassword" placeholder="Enter New Password"
+                        name="pass" required>
+                </div>
+                <span id="passvalid" class="error" style="color: red; font-weight: lighter; font-style: oblique;"></span>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                    </div>
+                    <input type="password" class="form-control" id="confirmPassword"
+                        placeholder="Confirm New Password" required>
+                </div>
+                <span id="conpassvalid" class="error" style="color: red; font-weight: lighter; font-style: oblique;"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Update Password</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- validation -->
+    <script>
+        function validatepass() {
+            var password = document.getElementById("newPassword").value;
+            var conpass = document.getElementById("confirmPassword").value;
+            var returnvalue = true;
+            var passregx = /^[a-zA-Z0-9]{6,10}$/;
+
+            if (!(passregx.test(password))) {
+                document.getElementById('passvalid').innerHTML = "Password must contain 6 to 10 characters.";
+                returnvalue = false;
+            }
+
+            if (password !== conpass) {
+                document.getElementById("conpassvalid").innerHTML = "Passwords do not match.";
+                returnvalue = false;
+            }
+
+            return returnvalue;
+        }
+
+        document.getElementById("newPassword").addEventListener("click", function () {
+            document.getElementById('passvalid').innerHTML = ""
+        });
+        document.getElementById("confirmPassword").addEventListener("click", function () {
+            document.getElementById('conpassvalid').innerHTML = ""
+        });
+    </script>
+</body>
+
+</html>

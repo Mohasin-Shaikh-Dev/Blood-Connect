@@ -1,0 +1,227 @@
+
+#carouselExampleControls .carousel-inner .carousel-item img {
+    height: 250px;
+}
+#carouselExampleControls .carousel-control-prev,
+#carouselExampleControls .carousel-control-next {
+    
+    width: 5%; /* Adjust the width as needed */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+}
+
+#carouselExampleControls .carousel-control-prev-icon,
+#carouselExampleControls .carousel-control-next-icon {
+    width: 30px; /* Adjust the width of the icons */
+    height: 30px; /* Adjust the height of the icons */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #000; /* Adjust icon color */
+    font-size: 30px; /* Adjust icon size */
+    opacity: 0.8; /* Adjust icon opacity */
+    transition: opacity 0.2s ease;
+}
+
+/* Style the carousel control icons on hover */
+#carouselExampleControls .carousel-control-prev:hover,
+#carouselExampleControls .carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.3); /* Adjust background color on hover */
+}
+
+/* Adjust the position of the carousel control icons */
+#carouselExampleControls .carousel-control-prev {
+    left: 0;
+}
+
+#carouselExampleControls .carousel-control-next {
+    right: 0;
+}
+
+  
+/* box style */
+.flex-container {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    width: 300px;
+    height: 170px;
+   
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5; /* Adjust line-height for better text display */
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-box p {
+    margin: 0; /* Remove default margins from paragraphs */
+    font-weight: bold;
+}
+
+.boxes {
+    background-image: url('countboxbg3.jpg'); /* Replace 'your-image-url.jpg' with the path to your image */   
+    background-size: cover;
+    height: auuo;
+}
+
+.flex-box1 {
+    width: 170px;
+    height: 180px;   
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.5; /* Adjust line-height for better text display */
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    
+}
+.flex-box1 p a{
+    color: white;
+    text-decoration: none;
+}
+.flex-box1 p a:hover{   
+    text-decoration: underline;
+
+}
+
+.flex-box1:hover{
+    transform: scale(1.1);
+}
+
+.linkboxes{
+    background: url('blurmain2.jpg');
+}
+
+
+/* Add custom styles table */
+
+  .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust this value according to your layout */
+  }
+
+  .container {
+    width: 80%; /* Adjust the width as per your design */
+    margin: auto;
+  }
+
+ #bg{
+    color: red;
+    font-weight: bold;
+}
+
+/* Style the table header */
+.table thead th {
+    background-color: #007bff; /* Blue background color */
+    color: #fff; /* White text color */
+}
+
+/* Style alternating table rows */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2; /* Light gray background color for odd rows */
+}
+
+/* Style table cell padding and text alignment */
+.table td, .table th {
+    padding: 10px; /* Adjust cell padding */
+    text-align: center; /* Center align text */
+}
+
+/* Style table borders */
+.table {
+    border: 2px solid #007bff; /* Blue border color */
+    border-radius: 10px; /* Rounded border corners */
+}
+
+/* Style table hover effect */
+.table-hover tbody tr:hover {
+    background-color: #cce5ff; /* Light blue background color on hover */
+}
+
+
+/* team member */
+/* Header Style */
+
+/* Card Styles */
+.teammember{
+    background-color: rgb(247, 247, 247);
+   
+}
+.member {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 0 10px 20px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.card-post-info {
+    font-size: 14px;
+    color: #888;
+}
+
+.card-post-info{
+    font-family: 'Philosopher', sans-serif;
+}
+
+
+h1 {
+    padding-top: 30px; 
+    font-size: 24px;
+    color: #333;
+    text-align: center; /* Center align the text */
+    width: 100%; /* Ensure the width takes full width */
+    font-family: 'Pacifico', cursive;
+    color: rgb(7, 201, 168);
+    text-decoration: underline;
+}
+
+   

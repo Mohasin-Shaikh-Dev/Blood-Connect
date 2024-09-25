@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+/* styles.css */
+
+body{
+	margin:0;
+	background: #110a14;
+}
+.card {
+  color:#fff;
+  border: none;
+  
+  border-radius: 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  background: linear-gradient(0deg,#ad5389,#3c1053);
+}
+
+.card-body {
+  padding: 1.6rem;
+}
+
+.img-fluid {
+  width: 150px;
+  height: 150px;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: none;
+  
+}
+ .card-body .list-group-item {
+     /* Change this to the desired color */
+    }

@@ -1,0 +1,12 @@
+SMAP
+signupcheck_jsp.java
+JSP
+*S JSP
+*F
++ 0 signupcheck.jsp
+signupcheck.jsp
+*L
+2,10:45
+12,23:56
+34,5:79
+*E
