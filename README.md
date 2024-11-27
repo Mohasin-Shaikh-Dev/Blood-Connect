@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +7,8 @@
 <body>
 
     <h1>Blood Connect</h1>
+
+    <p><a href="https://github.com/Mohasin-Shaikh-Dev/Blood-Connect">GitHub Repository</a></p>
 
     <p>Blood Connect is a platform built to help individuals find blood donors, blood banks, and blood donation camps. The project leverages <strong>J2EE</strong>, <strong>Java</strong>, <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, and <strong>Bootstrap</strong> to offer a seamless experience for users.</p>
 
@@ -24,6 +25,11 @@
         <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap</li>
         <li><strong>Database:</strong> MySQL</li>
     </ul>
+
+    <h2>Screenshots:</h2>
+    <img src="link_to_screenshot.png" alt="Blood Connect Screenshot" width="600">
+
+    <p>For more details, visit the <a href="https://github.com/Mohasin-Shaikh-Dev/Blood-Connect">GitHub Repository</a>.</p>
+
 </body>
 </html>
-
